@@ -1,5 +1,2 @@
-# Roadmap-profissional
- Repositório de atividades do road-map.
-
-# Pré-requisitos
-As atividades foram desenvolvidas no VS Code.
+# Dictionary
+    É a definição de uma lista indexada, que pernmite armazenar pares de chave e valor, de qualquer tipo (int, string, bool e etc).

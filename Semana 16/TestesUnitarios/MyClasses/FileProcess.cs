@@ -3,8 +3,8 @@ using System.IO;
 
 namespace MyClasses
 {
-    class FileProcess
-    {
+   public class FileProcess
+   {
         public bool fileExisits(string fileName) {
             if (string.IsNullOrEmpty(fileName))
             {
@@ -12,5 +12,5 @@ namespace MyClasses
             }
             return File.Exists(fileName);
         }
-    }
+   }
 }

@@ -1,5 +1,6 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using MyClasses;
+using System;
 
 namespace MyClassesTest
 {
@@ -9,20 +10,37 @@ namespace MyClassesTest
         [TestMethod]
         public void FileNameDoesExisit()
         {
-            //TODO;
-            Assert.Inconclusive();
-        }
+            FileProcess fileProcess = new FileProcess();
+            bool fromCall;
 
-        public void FileNameDoesNotExisit()
-        {
-            //TODO;
-            Assert.Inconclusive();
+            fromCall = fileProcess.fileExisits(@"c:\temp\test.txt");
+            Assert.IsTrue(fromCall);
         }
-
+        
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
         public void FileNameNullOrEmpty_ThrowsArgumentNullException()
         {
-            //TODO;
-            Assert.Inconclusive();
+            FileProcess fileProcess = new FileProcess();
+
+            fileProcess.fileExisits("");
+        }
+
+        [TestMethod]
+        public void FileNameNullOrEmpty_ThrowsArgumentNullExceptionUsingTryCatch()
+        {
+            try
+            {
+                FileProcess fileProcess = new FileProcess();
+
+                fileProcess.fileExisits("");
+            }
+            catch (Exception)
+            {
+
+                return;
+            }
+            Assert.Fail("Fail Expected");
         }
     }
 }

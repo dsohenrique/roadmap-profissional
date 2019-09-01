@@ -9,10 +9,10 @@ namespace MyClassesTest
     public class FileProcessTest
     {
         private const string GOOD_FILE_NAME = @"c:\temp\testesUnitarios.txt";
+        private const string BAD_FILE_NAME = ".txt";
         public TestContext TestContext { get; set; }
 
         #region Test Initialize e CleanUp
-
         [TestInitialize]
         public void TestInitialize()
         {
@@ -42,6 +42,7 @@ namespace MyClassesTest
         #endregion
 
         [TestMethod]
+        [Description("Verifica se o arquivo exisite")]
         public void FileNameDoesExisit()
         {
             FileProcess fileProcess = new FileProcess();
@@ -52,18 +53,22 @@ namespace MyClassesTest
 
             Assert.IsTrue(fromCall);
         }
-        
-
         [TestMethod]
-        [ExpectedException(typeof(ArgumentNullException))]
-        public void FileNameNullOrEmpty_ThrowsArgumentNullException()
+        [Description("Verifica se o arquivo não exisite")]
+        public void FileNameDoesNotExisit()
         {
             FileProcess fileProcess = new FileProcess();
+            bool fromCall;
 
-            fileProcess.fileExisits("");
+            TestContext.WriteLine($"Testing File {BAD_FILE_NAME}");
+            fromCall = fileProcess.fileExisits(BAD_FILE_NAME);
+
+            Assert.IsFalse(fromCall);
         }
-
+        
+        
         [TestMethod]
+        [Description("Verifica se o arquivo é nulo ou vazio")]
         public void FileNameNullOrEmpty_ThrowsArgumentNullExceptionUsingTryCatch()
         {
             try

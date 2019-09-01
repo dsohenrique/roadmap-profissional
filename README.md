@@ -8,5 +8,5 @@
 
 
 # Pré-requisitos
-Atividades desenvolvidas no VS Code e Visual Studio Profissional.
+ Os projetos foram todos desenvolvidos no Visual Studio Community 2017, utilizando o .NET Framework 4.6.1 ou superior.
 

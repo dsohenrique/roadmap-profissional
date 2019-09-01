@@ -26,5 +26,5 @@
 	
 # Execução do projeto
 	1 Abra a solução no visual Studio e abra a classe(FileProcessTest.cs).
-	2 Clique com o botão direito no corpo da classe e selecione a opção run test.
+	2 Clique com o botão direito no corpo da classe e selecione a opção run tests.
 

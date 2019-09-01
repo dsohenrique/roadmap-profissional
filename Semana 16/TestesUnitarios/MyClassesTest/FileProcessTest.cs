@@ -12,12 +12,13 @@ namespace MyClassesTest
         public TestContext TestContext { get; set; }
 
         #region Test Initialize e CleanUp
+
         [TestInitialize]
         public void TestInitialize()
         {
             if (TestContext.TestName == "FileNameDoesExisit")
             {
-                if (string.IsNullOrEmpty(GOOD_FILE_NAME))
+                if (!string.IsNullOrEmpty(GOOD_FILE_NAME))
                 {
                     TestContext.WriteLine($"Creating File {GOOD_FILE_NAME}");
                     File.AppendAllText(GOOD_FILE_NAME, "Hello World");
@@ -28,13 +29,17 @@ namespace MyClassesTest
         [TestCleanup]
         public void TestCleanup()
         {
-            if (string.IsNullOrEmpty(GOOD_FILE_NAME))
+            if (TestContext.TestName == "FileNameDoesExisit")
             {
-                TestContext.WriteLine($"Deleting File {GOOD_FILE_NAME}");
-                File.Delete(GOOD_FILE_NAME);
+                if (!string.IsNullOrEmpty(GOOD_FILE_NAME))
+                {
+                    TestContext.WriteLine($"Deleting File {GOOD_FILE_NAME}");
+                    File.Delete(GOOD_FILE_NAME);
+                }
             }
         }
 
+        #endregion
 
         [TestMethod]
         public void FileNameDoesExisit()

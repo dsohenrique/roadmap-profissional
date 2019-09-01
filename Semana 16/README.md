@@ -22,8 +22,7 @@
 	3 Rode estes comandos no seu git bash para criar o arquivo test.txt, a criação deste arquivo é necesária pois o teste (FileNameDoesExisit) verifica se o aquivo está na pasta temp.
 	 3.1 cd 'C:\temp' 
 	 3.2 touch test.txt
-	4 Abra a solução no visual Studio e abra a classe(FileProcessTest.cs)
-	5 Clique com o botão direito no corpo da classe e selecione a opção run tests
 
 # Execução do projeto
-
+	1 Abra a solução no visual Studio e abra a classe(FileProcessTest.cs).
+	2 Clique com o botão direito no corpo da classe e selecione a opção run tests.

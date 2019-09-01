@@ -1,3 +1,7 @@
+
+# Dictionary
+    É a definição de uma lista indexada, que pernmite armazenar pares de chave e valor, de qualquer tipo (int, string, bool e etc).
+
 # MVC
     É uma estrutura utilizada para separar a lógica da interface do usuário, para isso a aplicação é divida em três partes Model,View e Controller.
 

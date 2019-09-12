@@ -5,17 +5,17 @@
  	. Semana 14
 	     => Classes		  
 	     => Encapsulamento
-	     => Herança
-	     => README	
+	     => Herança	
+
 	. Semana 15
 	     => Dicitionaries
 	     => MVC
-	     => README
+
 	. Semana 16
 	     => Classes		  
 	     => Encapsulamento
 	     => Herança
-	     => README
+
 	. Semana 17
 	     => LINQ
 	     => README	

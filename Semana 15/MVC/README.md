@@ -1,17 +1,4 @@
-
-# Dictionary
-    É a definição de uma lista indexada,
-    que pernmite armazenar pares de chave e valor, 
-    de qualquer tipo (int, string, bool e etc).
-
-# Projeto myDictionary
-	O conceito deste projeto é apenas apresentar em formato de código como dictionaries podem ser utilizados no C#, 
-	eu criei apenas uma ClassLibrary no Visual studio para demonstrar como funciona a atribuição de chaves e valores e como funciona também a iteração destas informações por meio de 
-	loops, tanto por chave quanto por valor.
-
-
-
-# Sobre o MVC
+﻿# Sobre o MVC
     É uma estrutura utilizada para separar a lógica da interface do usuário, 
     para isso a aplicação é divida em três partes Model,View e Controller.
 
@@ -27,6 +14,12 @@
     Responsável por controlar qual informação e qual interface deve ser exibida para o usuário, 
     a controller acessa tanto a  camada model quanto a camada view.
 
+# Sobre o projeto
+    Projeto desenvolvido com intuito de demonstrar e aprender como a estruturação de uma
+    solução MVC funciona.
+
+# Execução do projeto
+    Abra a pasta Projeto_Mvc e clique duas vezes no arquivo Projeto_Mvc.sln
 
 # Referência do projeto criado em MVC com C#
     https://imasters.com.br/back-end/iniciando-com-c-parte-05-primeiro-projeto-asp-net-mvc

@@ -11,15 +11,17 @@
     a view tem o papel de tranformar o dado em uma tela amigável.
 
 # Controller
-    Responsável por controlar qual informação e qual interface deve ser exibida para o usuário, 
+    Responsável por controlar qual informação e qual interface deve ser 
+    exibida para o usuário, 
     a controller acessa tanto a  camada model quanto a camada view.
 
 # Sobre o projeto
-    Projeto desenvolvido com intuito de demonstrar e aprender como a estruturação de uma
+    Projeto desenvolvido com intuito de demonstrar e entender como a estruturação de uma
     solução MVC funciona.
 
 # Execução do projeto
-    Abra a pasta Projeto_Mvc e clique duas vezes no arquivo Projeto_Mvc.sln
-
+    1 => Abra a pasta MyMvc e clique duas vezes no arquivo MyMvc.sln
+    2 => Selecione o arquivo Index.cshtml pelo visual studio e pressione F5
+	
 # Referência do projeto criado em MVC com C#
     https://imasters.com.br/back-end/iniciando-com-c-parte-05-primeiro-projeto-asp-net-mvc

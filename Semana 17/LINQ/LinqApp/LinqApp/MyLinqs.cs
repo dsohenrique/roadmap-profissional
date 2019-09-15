@@ -11,7 +11,7 @@ namespace LinqApp
         // Usando o Where e Contains
         public string LinqFiltrado()
         {
-            string[] names = { "Bill", "Steve", "James", "Mohan" };
+            string[] names = { "Bill", "Steve", "James", "Morty" };
 
             var myLinqQuery = names.Where(x => x.Contains('a'));
 

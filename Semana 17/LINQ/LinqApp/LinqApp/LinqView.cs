@@ -9,7 +9,7 @@ namespace LinqApp
             var linqs = new MyLinqs();
 
             Console.WriteLine("Usando o Where e Contains retorna apenas nomes com A");
-            Console.WriteLine("A lista de nomes é: Bill, Steve, James e Mohan");
+            Console.WriteLine("A lista de nomes é: Bill, Steve, James e Morty");
             Console.WriteLine("Retorno esperado:  James");
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"Retorno Linq Filtrado: {linqs.LinqFiltrado()}");

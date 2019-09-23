@@ -6,4 +6,9 @@
 	meu workflow visto que o javascript está presente em abundância no código fonte
 	do Zares.
 
-# Projeto em andamento novidades em breve :)
+# Sobre o desenvolvimento do projeto
+	Desenvolvi este projeto baseado nas videos aulas da plataforma Alura e para comprovação
+	do meu entendimento do assunto a pasta de provas possui capturas de tela com as atividades
+	respondidas por mim.
+
+# Projeto em andamento mais novidades em breve :)

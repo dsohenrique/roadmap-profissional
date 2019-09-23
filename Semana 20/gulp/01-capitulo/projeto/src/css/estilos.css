@@ -242,10 +242,6 @@ footer .container {
   text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
 }
 
-
-/* ex4: transform e transition */
-
-/* transform basico */
 .painel li:hover {
   box-shadow: 0 0 5px #333;
   transition: box-shadow 0.7s;
@@ -256,7 +252,6 @@ footer .container {
   transition: all 0.7s;
 }
 
-/* transform parte 1 */
 .painel li:hover {
   transform: scale(1.2);
 }
@@ -276,6 +271,7 @@ footer .container {
 .painel li:hover {
   transition: all 0.7s ease-in;
 }
+
 .painel li {
   transition: all 0.7s ease-out;
 }

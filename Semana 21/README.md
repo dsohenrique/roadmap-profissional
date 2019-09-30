@@ -7,6 +7,8 @@
 	do Zares.
 
 # Sobre o desenvolvimento do projeto
-	Desenvolvi este projeto baseado nas videos aulas do primeiro módulo do curso da plataforma
-	Alura e para comprovação do meu entendimento do assunto a pasta de provas possui capturas de 
-	tela com as atividades respondidas por mim.
+	Desenvolvi este projeto baseado nas videos aulas do segundo módulo da plataforma Alura e 
+	para comprovação do meu entendimento do assunto a pasta de provas possui capturas de tela 
+	com as atividades respondidas por mim.
+
+# Projeto em andamento mais novidades em breve :)

@@ -20,10 +20,13 @@
 	     => LINQ
 	     
 	. Semana 20
-	     => Módulo 1 Curso Gulp 
+	     => Curso Gulp 
 
 	. Semana 21
-	     => Módulo 2 Curso Gulp 
+	     => Curso Gulp
+
+	. Semana 22
+	     => Curso Flutter
 	
 
 # Pré-requisitos

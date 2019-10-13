@@ -4,8 +4,9 @@
 	estou desenvolvendo este projeto o Byte Bank.
 
 # EXECUÇÂO DO PROJETO
-	Para executar o projeto sugiro o link de documentação da ferramenta.
-	Clique Aqui!
+	Para executar o projeto sugiro o link de documentação da ferramenta,
+	lembrando que eu utilizei o android studio para rodar o projeto.
+	[Documentação Flutter](https://flutter.dev/docs/get-started/install) 
 
 # ADICIONAIS
 	Adicionei também uma pasta de prints para poder ilustrar as fases de 

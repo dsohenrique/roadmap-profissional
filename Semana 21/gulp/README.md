@@ -12,4 +12,4 @@
 	com as atividades respondidas por mim.
 
 # Certificado de conclusão
- ![alt text](https://raw.githubusercontent.com/dsohenrique/roadmap-profissional/master/Semana%2021/gulp/Atividades/Certificado_Conclusao.PNG?token=AICO6JMBEOJ5N6EGTF6INU25UMVBM)
+ ![alt text](https://raw.githubusercontent.com/dsohenrique/roadmap-profissional/master/Semana%2021/gulp/Atividades/Certificado_Conclusao.PNG?token=AICO6JKQJE6SEZGQGPXNTIS5VR65A)

@@ -1,5 +1,7 @@
 
 class Transferencia{
-   double valor;
-   int numeroConta;
+   final double valor;
+   final int numeroConta;
+
+  Transferencia(this.valor, this.numeroConta);
 }

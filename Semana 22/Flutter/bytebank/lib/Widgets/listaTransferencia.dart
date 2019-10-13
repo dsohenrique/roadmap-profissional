@@ -1,22 +1,43 @@
+import 'package:bytebank/Model/transferencia.dart';
+import 'package:bytebank/Widgets/formularioTransferencia.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-import '../Transferencia.dart';
+class ListaTransferencia extends StatefulWidget {
+  final List<Transferencia> _transferencias = List();
 
-class ListaTransferencia extends StatelessWidget {
+  @override
+  _ListaTransferenciaState createState() => _ListaTransferenciaState();
+}
+
+class _ListaTransferenciaState extends State<ListaTransferencia> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Transferencias')
+      appBar: AppBar(title: Text('Transferências do Douglas!')),
+      body: ListView.builder(
+        itemCount: widget._transferencias.length,
+        itemBuilder: (context, indice){
+         final Transferencia transferencia = widget._transferencias[indice];
+          return ItemTransferencia(transferencia);
+
+        },
       ),
-      body: Column(
-        children: <Widget>[
-          ItemTransferencia(Transferencia(151.46546, 12331321)),
-          ItemTransferencia(Transferencia(4564.6, 4645646546)),
-        ],
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {
+          final Future<Transferencia> future =  Navigator.push(context, MaterialPageRoute(builder: (context){
+            return FormularioTransferencia();
+          }));
+          future.then((transferenciaRecebida){
+            if (transferenciaRecebida != null) {
+              setState(() {
+                widget._transferencias.add(transferenciaRecebida);
+              });
+            }
+          });
+        },
       ),
-      floatingActionButton: Icon(Icons.account_balance_wallet),
     );
   }
 }

@@ -1,9 +1,16 @@
-import 'package:bytebank/Controller/TransferenciaController.dart';
+import 'package:bytebank/Model/transferencia.dart';
+import 'package:bytebank/Widgets/editor.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class FormularioTransferencia extends StatelessWidget {
+class FormularioTransferencia extends StatefulWidget {
+  @override
+  _FormularioTransferenciaState createState() => _FormularioTransferenciaState();
+}
+
+class _FormularioTransferenciaState extends State<FormularioTransferencia> {
   final TextEditingController _controladorNumeroConta = TextEditingController();
+
   final TextEditingController _controladorValor = TextEditingController();
 
   @override
@@ -14,40 +21,38 @@ class FormularioTransferencia extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
-        child: Column(
-          children: <Widget>[
-            TextField(
-              controller: _controladorNumeroConta,
-              decoration: InputDecoration(
-                labelText: 'Número da conta',
-                hintText: '0000',
-                icon: Icon(Icons.account_balance)
+        child: SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              Editor(
+                  controlador: _controladorNumeroConta,
+                  rotulo: 'Número da conta',
+                  dica: '0000',
+                  icone: Icons.account_balance),
+              Editor(
+                  controlador: _controladorValor,
+                  rotulo: 'Valor',
+                  dica: '00,00',
+                  icone: Icons.monetization_on),
+              RaisedButton(
+                child: Text('Confirmar'),
+                color: Colors.blueAccent,
+                textColor: Colors.white,
+                onPressed: () => _addTransferencia(context),
               ),
-              keyboardType: TextInputType.number,
-            ),
-            TextField(
-              controller: _controladorValor,
-              decoration: InputDecoration(
-                labelText: 'Valor',
-                hintText: '00,00',
-                icon: Icon(Icons.monetization_on),
-              ),
-              keyboardType: TextInputType.number,
-            ),
-            RaisedButton(
-              child: Text('Confirmar'),
-              color: Colors.blueAccent,
-              onPressed: () {
-                final int conta = int.tryParse(_controladorValor.text);
-                final double valor = double.tryParse(_controladorValor.text);
-                if (conta != null && valor != null) {
-                  AddTransferencia(conta, valor);
-                }
-              },
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
+  }
+
+  void _addTransferencia(context) {
+    final int conta = int.tryParse(_controladorNumeroConta.text);
+    final double valor = double.tryParse(_controladorValor.text);
+    if (conta != null && valor != null && valor > 0.0) {
+      final transferenciaCriada = Transferencia(valor, conta);
+      Navigator.pop(context, transferenciaCriada);
+    }
   }
 }

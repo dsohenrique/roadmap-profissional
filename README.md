@@ -27,6 +27,9 @@
 
 	. Semana 22
 	     => Curso Flutter
+
+	. Semana 23
+	     => Testes unitários com JEST
 	
 
 # Pré-requisitos

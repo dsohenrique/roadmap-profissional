@@ -1,6 +1,6 @@
 # Testes unitários em Javascript
 	O objetivo destes projetos além do meu aprendizado em testes unitários para JS é
-	também me ajudar a escolher um dos vários frameworks disponibilizados por aí.
+	também me ajudar a escolher um dos vários frameworks disponibilizados na web para o Zares.
 
 # Projeto Jasmine
 	Para executar este projeto basta executar o arquivo specRunner.html em

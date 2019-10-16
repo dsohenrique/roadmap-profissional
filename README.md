@@ -29,7 +29,7 @@
 	     => Curso Flutter
 
 	. Semana 23
-	     => Testes unitários com JEST
+	     => Testes unitários em Javascript
 	
 
 # Pré-requisitos

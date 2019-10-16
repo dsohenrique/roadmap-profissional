@@ -1,15 +1,17 @@
-# Testes unit·rios em Javascript
-	O objetivo destes projetos alÈm do meu aprendizado em testes unit·rios para JS È
-	tambÈm me ajudar a escolher um dos v·rios frameworks disponibilizados por aÌ.
+# Testes unit√°rios em Javascript
+	O objetivo destes projetos al√©m do meu aprendizado em testes unit√°rios para JS √©
+	tamb√©m me ajudar a escolher um dos v√°rios frameworks disponibilizados por a√≠.
 
 # Projeto Jasmine
 	Para executar este projeto basta executar o arquivo specRunner.html em
 	qualquer navegador.
 	Dentro do arquivo specRunnerTest.js eu deixei comentado um Assert que gera
 	uma falha no teste, caso queira validar basta descomenta-lo, eu particularmente
-	n„o gostei muito do Jasmine porque precisa de uma pagina apenas para ele, e tambÈm
-	n„o achei muito intuitiva a forma como ele funciona.
+	n√£o gostei muito do Jasmine porque precisa de uma pagina apenas para ele, e tamb√©m
+	n√£o achei muito intuitiva a forma como ele funciona.
 
-	## Caso de Sucesso
+# Caso de Sucesso
+![Caso de Sucesso](https://raw.githubusercontent.com/dsohenrique/roadmap-profissional/master/Semana%2023/TestesJS/Capturas/Jamine_Success.PNG?token=AICO6JIGR6Q3PTJPXQFW5R25WDGF4)
 
-	## Caso de falha
+# Caso de falha
+![Caso de falha](https://raw.githubusercontent.com/dsohenrique/roadmap-profissional/master/Semana%2023/TestesJS/Capturas/Jamine_Fail.PNG?token=AICO6JOIJD3TEVFYD4D2IHK5WDGG6)

@@ -1,4 +1,4 @@
-package com.example.flutter_project
+package com.example.flutter_redux
 
 import android.os.Bundle
 

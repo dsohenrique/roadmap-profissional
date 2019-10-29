@@ -1,4 +1,4 @@
-# flutter_project
+# flutter_redux
 
 A new Flutter project.
 

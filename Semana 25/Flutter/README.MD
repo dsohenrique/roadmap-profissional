@@ -1,1 +1,1 @@
-# Projeto Flutter com redux
+# Projeto Flutter Pokedex

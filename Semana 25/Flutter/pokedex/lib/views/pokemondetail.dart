@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:pokedex/views/pokemon.dart';
 

@@ -29,7 +29,6 @@ class HomePageState extends State<HomePage> {
     var res = await http.get(url);
     var decodedJson = jsonDecode(res.body);
     pokeHub = PokeHub.fromJson(decodedJson);
-    print(pokeHub.toJson());
     setState(() {});
   }
 
@@ -37,7 +36,7 @@ class HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Poke App"),
+        title: Text("Pokedex"),
         backgroundColor: Colors.cyan,
       ),
       body: pokeHub == null
@@ -52,11 +51,13 @@ class HomePageState extends State<HomePage> {
                         child: InkWell(
                           onTap: () {
                             Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => PokeDetail(
-                                          pokemon: poke,
-                                        )));
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => PokeDetail(
+                                  pokemon: poke,
+                                ),
+                              ),
+                            );
                           },
                           child: Hero(
                             tag: poke.img,
@@ -67,8 +68,7 @@ class HomePageState extends State<HomePage> {
                                     MainAxisAlignment.spaceEvenly,
                                 children: <Widget>[
                                   Container(
-                                    height: MediaQuery.of(context).size.height *
-                                        0.1,
+                                    height: MediaQuery.of(context).size.height * 0.1,
                                     width:
                                         MediaQuery.of(context).size.width * 0.2,
                                     decoration: BoxDecoration(

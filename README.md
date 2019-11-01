@@ -1,6 +1,5 @@
 ﻿# Roadmap-profissional
- Repositório de atividades do road-map.
-
+ 
 # Estruturação das pastas
  	. Semana 14
 	     => Classes		  
@@ -30,6 +29,12 @@
 
 	. Semana 23
 	     => Testes unitários em Javascript
+        
+	. Semana 24
+	     => Flutter
+
+	. Semana 25
+	     => Flutter
 	
 
 # Pré-requisitos

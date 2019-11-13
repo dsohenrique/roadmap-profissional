@@ -6,14 +6,16 @@ class DetailPokemon {
     // configura o  AlertDialog
     Dismissible pokemonDetail = Dismissible(
       child: AlertDialog(
-      content: Center(
-        child: Align(
-          child: Hero(
-            tag: pokemon.img,
-            child: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: NetworkImage(pokemon.img),
+      content: Container(
+        child: Center(
+          child: Align(
+            child: Hero(
+              tag: pokemon.img,
+              child: Container(
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: NetworkImage(pokemon.img),
+                  ),
                 ),
               ),
             ),
@@ -22,7 +24,7 @@ class DetailPokemon {
       ),
     ),
       key: ValueKey(pokemon),
-      direction: DismissDirection.vertical,
+      direction: DismissDirection.horizontal,
       onDismissed: (direction){
         Navigator.pop(context);
       },

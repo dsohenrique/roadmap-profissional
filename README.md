@@ -38,7 +38,9 @@
 
  	. Semana 26
 	     => Flutter
-	
+	     
+	. Semana 27
+	     => ES6
 
 # Pré-requisitos
  Todos os projetos até a semana 21 foram desenvolvidos no Visual Studio Community 2017, utilizando o .NET Framework 4.6.1 ou superior.
